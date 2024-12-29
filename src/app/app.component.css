@@ -1,0 +1,30 @@
+.container {
+    position: relative;
+    width: 50vw; /* Ajusta el tamaño del contenedor como un rectángulo pequeño */
+    height: 50vh; /* Ajusta la altura del contenedor */
+    overflow: hidden; /* Mantiene todo el contenido dentro del rectángulo */
+}
+
+h1 {
+    font-size: 4em;
+    animation: bounce 15s infinite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translate(-50%, -50%);
+    }
+    25% {
+        transform: translate(100%, -50%);
+    }
+    50% {
+        transform: translate(100%, 100%);
+    }
+    75% {
+        transform: translate(-50%, 100%);
+    }
+}
